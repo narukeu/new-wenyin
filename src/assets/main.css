@@ -1,5 +1,37 @@
-@import './base.css';
+/* 
+color palette from <https://github.com/vuejs/theme> 
+:root {} 
+semantic color variables for this project 
+:root {}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+} 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+} 
+*/
 
 #app {
-  /* */
+  margin: 0 auto;
+}
+
+body {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+div{
+  color: #303133;
+}
+
+a {
+  color: #303133;
+  text-decoration: none;
 }

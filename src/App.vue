@@ -27,9 +27,8 @@ export default {
   <div class="common-layout">
     <el-container>
       <el-affix><el-header>
-          <el-menu ellipsis="true"
-            unique-opened="true" :default-active="activeIndex" class="el-menu-demo" mode="horizontal"
-            @select="handleSelect">
+          <el-menu ellipsis="true" unique-opened="true" :default-active="activeIndex" class="el-menu-demo"
+            mode="horizontal" @select="handleSelect">
             <el-menu-item>
               玟茵开源社区
             </el-menu-item>
@@ -44,23 +43,17 @@ export default {
             <!-- 页面导航子菜单 -->
             <el-sub-menu index="2">
               <template #title>页面导航</template>
-              <el-menu-item index="2-1">item 1</el-menu-item>
-              <el-menu-item index="2-2">item 2</el-menu-item>
-              <el-sub-menu index="2-3">
-                <template #title>item 3</template>
-                <el-menu-item index="2-4-1">item one</el-menu-item>
-                <el-menu-item index="2-4-2">item two</el-menu-item>
-                <el-menu-item index="2-4-3">item three</el-menu-item>
-              </el-sub-menu>
+              <el-menu-item index="2-1"><a href="http://paste.wenyinos.com/" target="_blank">代码粘贴板</a></el-menu-item>
+              <el-menu-item index="2-2"><a href="http://bbs.wenyinos.com/" target="_blank">Legacy Computer
+                  Forum</a></el-menu-item>
+              <el-menu-item index="2-3"><a href="http://cloud.wenyinos.com/" target="_blank">KodBox</a></el-menu-item>
+              <el-menu-item index="2-4"><a href="http://cloud.wenyinos.com/" target="_blank">GitHub
+                  文件加速</a></el-menu-item>
+              <el-menu-item index="2-5"><a href="http://ban.wenyinos.com/" target="_blank">游戏服务管理</a></el-menu-item>
             </el-sub-menu>
-            <el-sub-menu index="3">
-              <template #title>技术支持</template>
-              <el-menu-item index="3-1"><a href="http://dev.wenyinos.com/my">知识库</a></el-menu-item>
-              <el-menu-item index="3-2"><a href="mailto:admin@wenyinos.com">邮件联系</a></el-menu-item>
-            </el-sub-menu>
-            <el-menu-item index="4"><a href="">知识库</a></el-menu-item>
-            <el-menu-item index="5">论坛讨论</el-menu-item>
-            <el-menu-item index="6">
+            <el-menu-item index="3"><a href="https://wiki.wenyinos.com/">知识库</a></el-menu-item>
+            <el-menu-item index="4"><a href="https://forum.wenyinos.com/">论坛讨论</a></el-menu-item>
+            <el-menu-item index="5">
               <RouterLink to="/about">关于</RouterLink>
             </el-menu-item>
           </el-menu>
@@ -75,5 +68,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
