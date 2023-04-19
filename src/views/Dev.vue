@@ -1,14 +1,11 @@
-<template>
-    <div><el-row>
-            <el-col :span="12">
-                <div class="grid-content ep-bg-purple" />11111
-            </el-col>
-            <el-col :span="12">
-                <div class="grid-content ep-bg-purple-light" />22222
-            </el-col>
-        </el-row></div>
-</template>
+<script setup lang="ts">
+import Cardfile from '@/components/dev/Cardfile.vue'
+</script>
 
-<script setup></script>
+<template>
+    <div>
+        <Cardfile></Cardfile>
+    </div>
+</template>
 
 <style scoped></style>
