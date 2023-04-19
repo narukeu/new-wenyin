@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '@/views/Home.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,9 +8,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
-      meta:{
-        title:"页面展览"
-      }
     },
 
     {
@@ -22,6 +19,15 @@ const router = createRouter({
       component: () => import('../views/About.vue')
     },
 
+    {
+      path: '/dev',
+      name: 'dev',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Dev.vue')
+    },
+    
     // 404 页面
     {
       path: '/:catchAll(.*)',

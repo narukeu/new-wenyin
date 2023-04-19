@@ -1,9 +1,7 @@
 <template>
-  <div class="about">
-    This is an about page
-  </div>
+<Timelines></Timelines>
 </template>
 
-<style>
-
-</style>
+<script setup lang="ts">
+import Timelines from '@/components/about/Timelines.vue';
+</script>
