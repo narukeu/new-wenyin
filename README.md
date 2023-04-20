@@ -1,40 +1,21 @@
 # 玟茵开源社区主页
 
-This template should help get you started developing with Vue 3 in Vite.
+玟茵开源社区的展示页，用于展示玟茵开源社区的项目、功能。
 
-## Recommended IDE Setup
+技术：Vue 3 + Vite 4.2 + Element Plus 2.3
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## 说明
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+网站虽然说没有使用到后端技术，为了代码复用及维护方便，因此网页中很多的文字和图片的链接都外置成了 JSON 放在了 data 文件夹里面。写法有点类似前后端分离技术。
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+同时也为了网站以后如果用到了后端，这样更方便改写。
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## 特别感谢
 
-```sh
-npm install
-```
+- [Wenyin Root](https://github.com/wenyinos)
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+- [XiaoHe321](https://github.com/xh321)
