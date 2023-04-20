@@ -4,8 +4,8 @@
   <div class="showview-global">
     <div class="showview-item" v-for="(item, index) in jsonData" :key="index">
       <div class="showview-item-title">
-        <div>{{ item.title1 }}</div>
-        <div>{{ item.title2 }}</div>
+        <div>{{ item.title }}</div>
+        <div>{{ item.subtitle }}</div>
       </div>
       <div class="showview-item-cont">
         <div>{{ item.content1 }}</div>

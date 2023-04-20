@@ -4,12 +4,12 @@
     <div class="detailtext-global">
         <div class="detailtext-item" v-for="(item, index) in jsonData" :key="index">
             <div class="detailtext-item-plate">
-                <el-image style="width: 280px; height: 280px" :src="imgUrls[index]" fit="fill"></el-image>
+                <el-image style="width: 320px; height: 280px" :src="imgUrls[index]" fit="fill"></el-image>
             </div>
             <div class="detailtext-item-w">
                 <div class="detailtext-item-title">
-                    <div>{{ item.title1 }}</div>
-                    <div>{{ item.title2 }}</div>
+                    <div>{{ item.title }}</div>
+                    <div>{{ item.subtitle }}</div>
                 </div>
                 <div class="detailtext-item-cont">
                     <div>{{ item.content1 }}</div>
