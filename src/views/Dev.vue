@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import jsonData from '@/data/Dev/introhead.json'
-import Cardfile from '@/components/dev/Cardfile.vue'
+import Cardfile from '@/components/Cardfile.vue'
 </script>
 
 <style scoped>

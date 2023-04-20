@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import Timelines from '@/components/about/Timelines.vue';
+import Timelines from '@/components/Timelines.vue';
 </script>
