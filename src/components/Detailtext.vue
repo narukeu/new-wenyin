@@ -4,7 +4,7 @@
     <div class="detailtext-global">
         <div class="detailtext-item" v-for="(item, index) in jsonData" :key="index">
             <div class="detailtext-item-plate">
-                <el-image style="width: 320px; height: 280px" :src="imgUrls[index]" fit="fill"></el-image>
+                <el-image style="width: 330px; height: 280px" :src="imgUrls[index]" fit="fill"></el-image>
             </div>
             <div class="detailtext-item-w">
                 <div class="detailtext-item-title">
@@ -55,11 +55,11 @@ export default {
     align-items: center;
 
     .detailtext-item {
+        background-color: #FAFAFA;
         display: flex;
-        padding: 10px;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 70vw;
+        width: 80vw;
         height: 100%;
         align-items: center;
         margin-top: 10px;
@@ -76,12 +76,10 @@ export default {
             height: 100%;
             width: 60%;
             justify-content: center;
+            margin:20px;
         }
 
         &-title {
-            margin-top: 10px;
-            margin-bottom: 10px;
-
             div:nth-child(1) {
                 font-size: 30px;
                 font-weight: bolder;
@@ -121,8 +119,7 @@ export default {
     }
 }
 
-el-image{
-  background-color: transparent !important;
+el-image {
+    background-color: transparent !important;
 }
-
 </style>
