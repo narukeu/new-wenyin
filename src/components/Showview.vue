@@ -12,7 +12,11 @@
         <div>{{ item.content2 }}</div>
       </div>
       <div class="showview-item-footer">
-        <RouterLink :to="item.link"><div>{{ item.footer }} <el-icon size="14px" color="#337ecc"><ArrowRight /></el-icon></div></RouterLink>
+        <RouterLink :to="item.link">
+          <div>{{ item.footer }} <el-icon size="14px" color="#337ecc">
+              <ArrowRight />
+            </el-icon></div>
+        </RouterLink>
       </div>
     </div>
   </div>
@@ -32,11 +36,9 @@ import jsonData from '@/data/Home/showview.json'
   .showview-item {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 20px;
     align-items: center;
     width: 60vw;
-    height: 250px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -45,19 +47,19 @@ import jsonData from '@/data/Home/showview.json'
       margin: 5px;
 
       div:nth-child(1) {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: bolder;
       }
 
       div:nth-child(2) {
-        font-size: 16px;
+        font-size: 24px;
         color: #606266;
       }
     }
 
     &-cont {
       color: #606266;
-      font-size: 14px;
+      font-size: 16px;
 
       div {
         margin-top: 10px;
@@ -85,5 +87,4 @@ import jsonData from '@/data/Home/showview.json'
       }
     }
   }
-}
-</style>
+}</style>
