@@ -23,7 +23,7 @@ semantic color variables for this project
 }
 
 body {
-  width: 85vw;
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -34,4 +34,8 @@ div{
 a {
   color: #303133;
   text-decoration: none;
+}
+
+svg {
+  background-color: transparent;
 }

@@ -1,0 +1,65 @@
+/* 
+color palette from <https://github.com/vuejs/theme> 
+:root {} 
+semantic color variables for this project 
+:root {}
+
+@media (prefers-color-scheme: dark) {
+  :root {}
+} 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+} 
+*/
+
+#app {
+  margin: 0 auto;
+}
+
+body {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+div {
+  color: #303133;
+}
+
+a {
+  color: #303133;
+  text-decoration: none;
+}
+
+.introhead-global {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+
+  .introhead-item {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    align-items: center;
+    width: 60vw;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    div:nth-child(1) {
+      font-size: 40px;
+      font-weight: bolder;
+    }
+
+    div:nth-child(2) {
+      font-size: 24px;
+      color: #606266;
+    }
+  }
+}
