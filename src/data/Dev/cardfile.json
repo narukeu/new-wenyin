@@ -1,0 +1,65 @@
+[
+    {
+        "title": "软件开发",
+        "subject": [
+            {
+                "name": "禅道管理",
+                "link": "http://dev.wenyinos.com/my"
+            },
+            {
+                "name": "GitHub 项目",
+                "link": "https://github.com/WenYin-Community"
+            },
+            {
+                "name": "Gitee 仓库",
+                "link": "https://gitee.com/wenyinos"
+            },
+            {
+                "name": "Crowdin 项目",
+                "link": "https://zh.crowdin.com/profile/wenyinos"
+            }
+        ]
+    },
+    {
+        "title": "软件演示",
+        "subject": [
+            {
+                "name": "Preview 20160502",
+                "link": "https://forum.wenyinos.com/thread-33.htm"
+            },
+            {
+                "name": "Preview 20160424",
+                "link": "https://forum.wenyinos.com/thread-6.htm"
+            },
+            {
+                "name": "Preview 20150903",
+                "link": "https://forum.wenyinos.com/thread-34.htm"
+            },
+            {
+                "name": "WenYinOS-Installer",
+                "link": "https://github.com/WenYin-Community/WenYinOS-Installer"
+            }
+        ]
+    },
+    {
+        "title": "进行项目",
+        "subject": [
+            {
+                "name": "参与开发测试",
+                "link": "https://forum.wenyinos.com/thread-37.htm"
+            },
+            {
+                "name": "域名邮箱（Wecom）",
+                "link": "https://exmail.qq.com/login"
+            },
+            {
+                "name": "致谢列表",
+                "link": "https://forum.wenyinos.com/thread-36.htm"
+            },
+            {
+                "name": "社区留言",
+                "link": "https://forum.wenyinos.com/thread-35.htm"
+            }
+        ]
+    }
+]
