@@ -2,8 +2,8 @@
     <div>
         <div class="introhead-global">
             <div class="introhead-item" v-for="(item, index) in jsonData" :key="index">
-                <div>{{ item.title1 }}</div>
-                <div>{{ item.title2 }}</div>
+                <div>{{ item.title }}</div>
+                <div>{{ item.subtitle }}</div>
             </div>
         </div>
         <Cardfile></Cardfile>
