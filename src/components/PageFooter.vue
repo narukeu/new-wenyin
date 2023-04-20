@@ -8,7 +8,7 @@
                     <div>玟茵开源社区不仅仅是一个开源技术社区，更是广大爱好者交流之地。</div>
                     <div>本站由 Vue.js 强力驱动。</div>
                     <div></div>
-                    <div>Powered by 七牛云存储</div>
+                    <div>Powered by 七牛云存储。</div>
                 </div>
             </div>
             <div class="footer-item">
@@ -49,7 +49,7 @@ let currentYear = new Date().getFullYear()
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .footer-info {
     display: flex;
     flex-wrap: wrap;
@@ -61,26 +61,25 @@ let currentYear = new Date().getFullYear()
     width: 210px;
     display: flex;
     height: 250px;
-    display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
-}
 
-.footer-item-title {
-    font-size: 16px;
-    font-weight: bolder;
-}
+    &-title {
+        font-size: 16px;
+        font-weight: bolder;
+    }
 
-.footer-item-info {
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-}
+    &-info {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
 
-.footer-item-info div {
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+        div {
+            font-size: 14px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
 }
 </style>

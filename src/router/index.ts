@@ -8,6 +8,9 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
+      meta: {
+        title: '主页'
+      },
     },
 
     {
@@ -25,7 +28,10 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Dev.vue')
+      component: () => import('../views/Dev.vue'),
+      meta: {
+        title: '软件开发'
+      },
     },
     
     // 404 页面
@@ -34,10 +40,18 @@ const router = createRouter({
       name: 'NotFound',
       component: import('../views/404.vue'),
       meta:{
-        title:"404"
-      }
+        title:"找不到页面"
+      },
     },
   ]
 })
+
+// 添加路由守卫以便能够更改标题
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = `开放，包容，细致，坚守 ———— 玟茵开源社区 - ${to.meta.title as string}`;
+  }
+  next();
+});
 
 export default router

@@ -22,69 +22,68 @@
 
 <script setup lang="ts"></script>
 
-<style scoped>
+<style scoped lang="scss">
 .showpic-global {
     display: flex;
     flex-direction: column;
-    /* margin-top: 10px; */
     margin-bottom: 10px;
     align-items: center;
-}
 
-.showpic-item {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 10px;
-    margin-right: 10px;
-    align-items: center;
-    width: 60vw;
-    height: 250px;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
+    .showpic-item {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        width: 60vw;
+        height: 250px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
 
-.showpic-item-title {
-    margin: 5px;
-}
+        &-title {
+            margin: 5px;
 
-.showpic-item-title div:nth-child(1) {
-    font-size: 30px;
-    font-weight: bolder;
-}
+            div:nth-child(1) {
+                font-size: 30px;
+                font-weight: bolder;
+            }
 
-.showpic-item-title div:nth-child(2) {
-    font-size: 16px;
-    color: #606266;
-}
+            div:nth-child(2) {
+                font-size: 16px;
+                color: #606266;
+            }
+        }
 
-.showpic-item-cont {
-    color: #606266;
-    font-size: 14px;
-}
+        &-cont {
+            color: #606266;
+            font-size: 14px;
 
-.showpic-item-cont div {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+            div {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
 
-.showpic-item-footer {
-    margin: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-}
+        &-footer {
+            margin: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
 
-.showpic-item-footer>a>div {
-    margin: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    color: #337ecc;
-    font-size: 16px;
-    line-height: 20px;
+            > a > div {
+                margin: 10px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items:center;
+                color:#337ecc;
+                font-size:16px;
+                line-height:20px; 
+            }
+        }
+    }
 }
 </style>
