@@ -10,11 +10,11 @@
                 <div>为桌面用户提供商业操作系统之外的选择。</div>
             </div>
             <div class="showpic-item-footer">
-                <a href="https://forum.wenyinos.com/thread-37.htm">
+                <RouterLink to="/intro">软件开发
                     <div>Getting Started <el-icon size="14px" color="#337ecc">
                             <ArrowRight />
                         </el-icon></div>
-                </a>
+                    </RouterLink>
             </div>
         </div>
     </div>
@@ -73,15 +73,15 @@
             align-items: center;
             height: 20px;
 
-            > a > div {
+            >a>div {
                 margin: 10px;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: center;
-                align-items:center;
-                color:#337ecc;
-                font-size:16px;
-                line-height:20px; 
+                align-items: center;
+                color: #337ecc;
+                font-size: 16px;
+                line-height: 20px;
             }
         }
     }
