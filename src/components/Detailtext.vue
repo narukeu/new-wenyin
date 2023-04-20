@@ -3,20 +3,25 @@
 <template>
     <div class="detailtext-global">
         <div class="detailtext-item" v-for="(item, index) in jsonData" :key="index">
-            <div class="detailtext-item-title">
-                <div>{{ item.title1 }}</div>
-                <div>{{ item.title2 }}</div>
+            <div class="detailtext-item-plate">
+                <el-image style="width: 280px; height: 280px" :src="imgUrls[index]" fit="fill"></el-image>
             </div>
-            <div class="detailtext-item-cont">
-                <div>{{ item.content1 }}</div>
-                <div>{{ item.content2 }}</div>
-            </div>
-            <div class="detailtext-item-footer">
-                <a :href="item.link">
-                    <div>{{ item.footer }} <el-icon size="14px" color="#337ecc">
-                            <ArrowRight />
-                        </el-icon></div>
-                </a>
+            <div class="detailtext-item-w">
+                <div class="detailtext-item-title">
+                    <div>{{ item.title1 }}</div>
+                    <div>{{ item.title2 }}</div>
+                </div>
+                <div class="detailtext-item-cont">
+                    <div>{{ item.content1 }}</div>
+                    <div>{{ item.content2 }}</div>
+                </div>
+                <div class="detailtext-item-footer">
+                    <a :href="item.link">
+                        <div>{{ item.footer }} <el-icon size="14px" color="#337ecc">
+                                <ArrowRight />
+                            </el-icon></div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -25,19 +30,53 @@
 <script setup lang="ts">
 import jsonData from '@/data/Intro/detailtext.json'
 </script>
-  
+
+<script lang="ts">
+export default {
+    data() {
+        var imgUrls: string[] = [];
+        for (let item of jsonData) {
+            console.log(item)
+            imgUrls.push(new URL(item.img, import.meta.url).href);
+        }
+        return {
+            imgUrls,
+        };
+    },
+};
+</script>
+
 <style scoped lang="scss">
 .detailtext-global {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 
     .detailtext-item {
         display: flex;
-        padding: 20px;
-        height: 200px;
-        flex-direction: column;
-        justify-content: center;
+        padding: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 70vw;
+        height: 100%;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &-plate {
+            height: 100%;
+            display: flex;
+        }
+
+        &-w {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 60%;
+            justify-content: center;
+        }
 
         &-title {
             margin-top: 10px;
@@ -80,4 +119,10 @@ import jsonData from '@/data/Intro/detailtext.json'
             }
         }
     }
-}</style>
+}
+
+el-image{
+  background-color: transparent !important;
+}
+
+</style>
