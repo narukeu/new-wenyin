@@ -1,14 +1,12 @@
-<!-- 介绍页从主页中分离，这样更简洁 -->
-
 <template><Transition name="slide-fade">
-    <div class="intro-global">
-      <div class="intro-item" v-for="(item, index) in jsonData" :key="index">
-        <div class="intro-item-img">
+    <div class="fpic-global">
+      <div class="fpic-item" v-for="(item, index) in jsonData" :key="index">
+        <div class="fpic-item-img">
           <el-image style="width: 100px; height: 100px" :src="imgUrls[index]" fit="fill"></el-image>
         </div>
-        <div class="intro-item-cont">
-          <div class="intro-item-cont-title">{{ item.title }}</div>
-          <div class="intro-item-cont-subtitle">{{ item.content }}</div>
+        <div class="fpic-item-cont">
+          <div class="fpic-item-cont-title">{{ item.title }}</div>
+          <div class="fpic-item-cont-subtitle">{{ item.content }}</div>
         </div>
       </div>
     </div></Transition>
@@ -16,7 +14,7 @@
 </template>
   
 <script setup lang="ts">
-import jsonData from "@/data/Intro/fourpics.json";
+import jsonData from "@/data/Home/fourpics.json";
 </script>
   
 <script lang="ts">
@@ -35,15 +33,14 @@ export default {
 </script>
   
 <style lang="scss">
-.intro-global {
+.fpic-global {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
-  .intro-item {
+  .fpic-item {
     display: flex;
-    margin: 5px;
     align-items: center;
     justify-content: center;
     flex-direction: column;

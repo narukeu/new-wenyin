@@ -28,7 +28,7 @@
 </template>
   
 <script setup lang="ts">
-import jsonData from '@/data/Intro/detailtext.json'
+import jsonData from '@/data/Home/detailtext.json'
 </script>
 
 <script lang="ts">
