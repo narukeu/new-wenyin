@@ -50,7 +50,7 @@ export default {
 .detailtext-global {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin:20px;
     justify-content: center;
     align-items: center;
 
