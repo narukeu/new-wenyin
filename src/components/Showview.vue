@@ -7,16 +7,8 @@
         <div>{{ item.title }}</div>
         <div>{{ item.subtitle }}</div>
       </div>
-      <div class="showview-item-cont">
-        <div>{{ item.content1 }}</div>
-        <div>{{ item.content2 }}</div>
-      </div>
-      <div class="showview-item-footer">
-        <RouterLink :to="item.link">
-          <div>{{ item.footer }} <el-icon size="15px" color="#337ecc">
-              <ArrowRight />
-            </el-icon></div>
-        </RouterLink>
+      <div class="showview-item-cont" v-for="(subitem, subindex) in item.content" :key="subindex">
+        <div>{{ subitem }}</div>
       </div>
     </div>
   </div>
@@ -42,49 +34,26 @@ import jsonData from '@/data/Home/showview.json'
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    height: 230px;
 
     &-title {
-      margin: 5px;
+      margin: 20px;
 
       div:nth-child(1) {
-        font-size: 40px;
+        font-size: 42px;
         font-weight: bolder;
       }
 
       div:nth-child(2) {
-        font-size: 24px;
-        color: #606266;
+        font-size: 26px;
       }
     }
 
     &-cont {
-      color: #606266;
-      font-size: 16px;
-
-      div {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    }
-
-    &-footer {
-      margin: 10px;
       display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      height: 20px;
-
-      >a>div {
-        margin: 10px;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        color: #337ecc;
-        font-size: 16px;
-        line-height: 20px;
-      }
+      flex-direction: column;
+      font-size: 16px;
     }
   }
-}</style>
+}
+</style>
