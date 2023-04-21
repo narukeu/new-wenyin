@@ -13,7 +13,7 @@
       </div>
       <div class="showview-item-footer">
         <RouterLink :to="item.link">
-          <div>{{ item.footer }} <el-icon size="14px" color="#337ecc">
+          <div>{{ item.footer }} <el-icon size="15px" color="#337ecc">
               <ArrowRight />
             </el-icon></div>
         </RouterLink>

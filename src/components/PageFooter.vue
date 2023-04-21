@@ -8,7 +8,7 @@
                     <div>玟茵开源社区不仅仅是一个开源技术社区，更是广大爱好者交流之地。</div>
                     <div>本站由 Vue.js 强力驱动。</div>
                     <div></div>
-                    <div>Powered by 七牛云存储。</div>
+                    <div><img style="width:180px; height:20px;" :src="Qiniu"></div>
                 </div>
             </div>
             <div class="footer-item">
@@ -45,6 +45,7 @@
 </template>
 
 <script setup lang="ts">
+import Qiniu from '@/assets/qiniu-transparent.png'
 let currentYear = new Date().getFullYear()
 
 </script>

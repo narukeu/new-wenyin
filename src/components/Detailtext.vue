@@ -17,7 +17,7 @@
                 </div>
                 <div class="detailtext-item-footer">
                     <a :href="item.link">
-                        <div>{{ item.footer }} <el-icon size="14px" color="#337ecc">
+                        <div>{{ item.footer }} <el-icon size="15px" color="#337ecc">
                                 <ArrowRight />
                             </el-icon></div>
                     </a>
@@ -55,11 +55,11 @@ export default {
     align-items: center;
 
     .detailtext-item {
-        background-color: #FAFAFA;
+        background-color: var(--ep-color-info);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 80vw;
+        width: 82vw;
         height: 100%;
         align-items: center;
         margin-top: 10px;
@@ -87,12 +87,10 @@ export default {
 
             div:nth-child(2) {
                 font-size: 16px;
-                color: #606266;
             }
         }
 
         &-cont {
-            color: #606266;
             font-size: 15px;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -119,7 +117,4 @@ export default {
     }
 }
 
-el-image {
-    background-color: transparent !important;
-}
 </style>
