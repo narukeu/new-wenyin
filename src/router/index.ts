@@ -14,15 +14,6 @@ const router = createRouter({
     },
 
     {
-      path: '/intro',
-      name: 'intro',
-      component: () => import('../views/Intro.vue'),
-      meta: {
-        title: '详情'
-      },
-    },
-
-    {
       path: '/about',
       name: 'about',
       // route level code-splitting

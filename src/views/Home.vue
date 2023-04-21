@@ -7,11 +7,15 @@ Advantages 是可折叠页，介绍玟茵开源社区的的特色。
 <script setup lang="ts">
 import Showview from '@/components/Showview.vue'
 import Advantages from '@/components/Advantages.vue'
+import Fourpics from '@/components/Fourpics.vue'
+import Detailtext from '@/components/Detailtext.vue'
 </script>
 
 <template>
   <div>
     <Showview></Showview>
+    <Fourpics></Fourpics>
+    <Detailtext></Detailtext>
     <Advantages></Advantages>
   </div>
 </template>
