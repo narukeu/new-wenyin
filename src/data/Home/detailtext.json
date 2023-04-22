@@ -6,7 +6,7 @@
     "content2": "提高品质，保持和上游开源社区紧密合作；杜绝分裂主义，为开源社区发展做出应有贡献。",
     "footer": "浏览项目",
     "link": "https://forum.wenyinos.com/thread-37.htm",
-    "img": "../assets/images/pic1.png"
+    "img": "/images/pic1.png"
   },
   {
     "title": "开源项目本地化",
@@ -15,7 +15,7 @@
     "content2": "用户也相信，如果他们能用自己的语言理解这些项目，他们会更有效地使用它。",
     "footer": "加入翻译",
     "link": "https://zh.crowdin.com/profile/wenyinos",
-    "img": "../assets/images/pic2.png"
+    "img": "/images/pic2.png"
   },
   {
     "title": "软件和知识库",
@@ -24,6 +24,6 @@
     "content2": "编写知识库文档,可以提供开发者和其他使用者所需的指导和信息，从而使开发更加顺利和高效。",
     "footer": "浏览 GitHub",
     "link": "https://github.com/wenyinos",
-    "img": "../assets/images/pic3.png"
+    "img": "/images/pic3.png"
   }
 ]
