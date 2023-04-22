@@ -2,7 +2,7 @@
 
 玟茵开源社区的展示页，用于展示玟茵开源社区的项目、功能。
 
-技术：Vue 3 + Vite 4.2 + Element Plus 2.3
+技术：Vue 3 + Vite + SCSS +  TypeScript + Element Plus
 
 
 

@@ -1,0 +1,28 @@
+// import dark theme
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+// CSS 动画
+@use "./animation.scss";
+
+//模块导入
+@use "./detailtext.scss";
+@use "./fourpics.scss";
+@use "./introhead.scss";
+@use "./showview.scss";
+
+#app {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--el-color-black);
+  text-decoration: none;
+}

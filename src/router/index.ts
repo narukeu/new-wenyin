@@ -14,30 +14,18 @@ const router = createRouter({
     },
 
     {
-      path: '/intro',
-      name: 'intro',
-      component: () => import('../views/Intro.vue'),
-      meta: {
-        title: '详情'
-      },
-    },
-
-    {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/About.vue')
     },
 
     {
-      path: '/dev',
-      name: 'dev',
+      path: '/devel',
+      name: 'devel',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Dev.vue'),
+      component: () => import('../views/Devel.vue'),
       meta: {
         title: '软件开发'
       },
