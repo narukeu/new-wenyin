@@ -35,7 +35,7 @@ const router = createRouter({
     {
       path: '/:catchAll(.*)',
       name: 'NotFound',
-      component: import('../views/404.vue'),
+      component: import('../views/NotFound.vue'),
       meta:{
         title:"找不到页面"
       },
@@ -46,7 +46,7 @@ const router = createRouter({
 // 添加路由守卫以便能够更改标题
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
-    document.title = `开放，包容，细致，坚守 ——— 玟茵开源社区（${to.meta.title as string}）`;
+    document.title = `开放，包容，细致，坚守 —— 玟茵开源社区 —— ${to.meta.title as string}`;
   }
   next();
 });

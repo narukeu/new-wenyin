@@ -4,10 +4,11 @@
 // CSS 动画
 @use "./animation.scss";
 
-//模块导入
+// 模块样式
 @use "./detailtext.scss";
 @use "./fourpics.scss";
 @use "./introhead.scss";
+@use "./notfound.scss";
 @use "./showview.scss";
 
 #app {
