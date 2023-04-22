@@ -14,5 +14,3 @@
 import jsonData from '@/data/Devel/introhead.json'
 import Cardfile from '@/components/Cardfile.vue'
 </script>
-
-<style scoped></style>
