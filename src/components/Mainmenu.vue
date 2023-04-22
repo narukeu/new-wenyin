@@ -9,7 +9,7 @@
         </el-menu-item>
         <el-menu-item index="2">
             <!-- 路由指向 -->
-            <RouterLink to="/dev">软件开发</RouterLink>
+            <RouterLink to="/devel">软件开发</RouterLink>
         </el-menu-item>
         <!-- 页面导航子菜单 -->
         <el-sub-menu index="3">
