@@ -1,16 +1,14 @@
-.detailtext-global {
+.dt-global {
     display: flex;
     flex-direction: column;
-    margin: 20px;
     justify-content: center;
     align-items: center;
 
-    .detailtext-item {
+    .dt-item {
         background-color: var(--ep-color-info);
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        width: 82vw;
         height: 100%;
         align-items: center;
         margin-top: 10px;

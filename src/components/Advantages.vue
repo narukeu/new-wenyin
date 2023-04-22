@@ -41,6 +41,5 @@ let activeName = '1'
 <style scoped>
 .demo-collapse {
   margin: 0 auto;
-  width: 82vw;
 }
 </style>

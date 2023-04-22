@@ -1,10 +1,10 @@
 [
-    {
-      "title": "页面未找到",
-      "subtitle": "404 NOT FOUND",
-      "content1": "请检查输入的路径是否正确，然后再试。",
-      "content2": "",
-      "footer": "Go Back",
-      "link": "/"
-    }
-  ]
+  {
+    "title": "页面未找到",
+    "subtitle": "404 NOT FOUND",
+    "content1": "请检查输入的路径是否正确，然后再试。",
+    "content2": "",
+    "footer": "Go Back",
+    "link": "/"
+  }
+]
