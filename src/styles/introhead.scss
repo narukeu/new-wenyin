@@ -1,12 +1,12 @@
-.introhead-global {
+.ih-global {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     align-items: center;
 
-    .introhead-item {
+    .ih-item {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: 20px;
         align-items: center;
         width: 60vw;

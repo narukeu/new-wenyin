@@ -4,7 +4,7 @@
             <template #header>
                 <div class="card-header">{{ item.title }}</div>
             </template>
-            <div class="text item" v-for="(subitem,subindex) in item.subject" :key ="subindex">
+            <div class="text item" v-for="(subitem, subindex) in item.subject" :key="subindex">
                 <div><a :href="subitem.link">{{ subitem.name }}</a></div>
             </div>
         </el-card>

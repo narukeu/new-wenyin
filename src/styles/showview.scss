@@ -1,19 +1,17 @@
-.showview-global {
+.sv-global {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
     align-items: center;
 
-    .showview-item {
+    .sv-item {
+
         display: flex;
-        flex-wrap: nowrap;
-        margin: 20px;
+        flex-wrap: wrap;
         align-items: center;
         width: 60vw;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        height: 230px;
 
         &-title {
             margin: 20px;

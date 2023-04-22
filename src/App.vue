@@ -23,17 +23,17 @@ export default {
     <el-container>
       <el-affix>
         <el-header>
-          <Mainmenu></Mainmenu>
+          <Mainmenu />
         </el-header>
       </el-affix>
 
       <el-main>
         <Transition>
-          <RouterView></RouterView>
+          <RouterView />
         </Transition>
       </el-main>
       <el-footer>
-        <PageFooter></PageFooter>
+        <PageFooter />
       </el-footer>
     </el-container>
   </div>
