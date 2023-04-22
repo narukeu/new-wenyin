@@ -45,7 +45,8 @@
 </template>
 
 <script setup lang="ts">
-import Qiniu from '@/assets/qiniu-transparent.png'
+import Qiniu from '/images/qiniu-transparent.png'
+
 let currentYear = new Date().getFullYear()
 
 </script>
