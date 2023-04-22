@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import jsonData from '@/data/Dev/cardfile.json'
+import jsonData from '@/data/Devel/cardfile.json'
 </script>
 
 <style scoped lang="scss">

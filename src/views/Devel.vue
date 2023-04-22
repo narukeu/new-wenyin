@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import jsonData from '@/data/Dev/introhead.json'
+import jsonData from '@/data/Devel/introhead.json'
 import Cardfile from '@/components/Cardfile.vue'
 </script>
 
