@@ -4,48 +4,25 @@
 // CSS 动画
 @use "./animation.scss";
 
+//模块导入
+@use "./detailtext.scss";
+@use "./fourpics.scss";
+@use "./introhead.scss";
+@use "./showview.scss";
+
 #app {
   margin: 0 auto;
 }
 
 body {
   margin: 0 auto;
-  width: 90vw;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 a {
   color: var(--el-color-black);
   text-decoration: none;
-}
-
-.introhead-global {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-  align-items: center;
-
-  .introhead-item {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 20px;
-    align-items: center;
-    width: 60vw;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-
-    div:nth-child(1) {
-      font-size: 40px;
-      font-weight: bolder;
-    }
-
-    div:nth-child(2) {
-      font-size: 24px;
-    }
-  }
 }
