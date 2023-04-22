@@ -4,7 +4,7 @@
     <div class="dt-global">
         <div class="dt-item" v-for="(item, index) in jsonData" :key="index">
             <div class="dt-item-plate">
-                <el-image :src="imgUrls[index]" fit="fill"></el-image>
+                <el-image lazy="true" :src="imgUrls[index]" fit="fill"></el-image>
             </div>
             <div class="dt-item-w">
                 <div class="dt-item-title">

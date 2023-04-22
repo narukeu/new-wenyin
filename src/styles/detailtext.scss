@@ -5,17 +5,15 @@
     align-items: center;
 
     .dt-item {
-        background-color: var(--ep-color-info);
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         height: 100%;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 20px;
+        width: 80vw;
 
         &-plate {
-            margin: 20px;
             height: 100%;
             width: 320px;
             display: flex;
@@ -26,7 +24,6 @@
             flex-direction: column;
             height: 100%;
             justify-content: center;
-            margin: 20px;
             width: 320px;
         }
 
