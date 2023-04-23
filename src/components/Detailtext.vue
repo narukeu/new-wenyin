@@ -3,9 +3,7 @@
 <template>
     <div class="dt-global">
         <div class="dt-item" v-for="(item, index) in jsonData" :key="index">
-            <div class="dt-item-plate">
-                <el-image lazy="true" :src="imgUrls[index]" fit="fill"></el-image>
-            </div>
+            <img v-if="item.toleft" class="dt-item-plate" :src="item.img" />
             <div class="dt-item-w">
                 <div class="dt-item-title">
                     <div>{{ item.title }}</div>
@@ -23,26 +21,12 @@
                     </a>
                 </div>
             </div>
+            <img v-if="!item.toleft" class="dt-item-plate" :src="item.img" />
         </div>
     </div>
 </template>
   
 <script setup lang="ts">
 import jsonData from '@/data/Home/detailtext.json'
-</script>
-
-<script lang="ts">
-export default {
-    data() {
-        var imgUrls: string[] = [];
-        for (let item of jsonData) {
-            console.log(item)
-            imgUrls.push(new URL(item.img, import.meta.url).href);
-        }
-        return {
-            imgUrls,
-        };
-    },
-};
 </script>
 

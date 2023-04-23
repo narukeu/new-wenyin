@@ -7,11 +7,13 @@
 
     .fpic-item {
         display: flex;
-        margin: 25px;
+        flex-wrap: wrap;
+        margin: 25px 40px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         text-align: center;
+
 
         &-img {
             height: 100px;
@@ -23,11 +25,11 @@
 
             &-title {
                 font-weight: bolder;
-                font-size: 18px;
+                font-size: 25px;
             }
 
             &-subtitle {
-                font-size: 14px;
+                font-size: 18px;
             }
         }
     }
