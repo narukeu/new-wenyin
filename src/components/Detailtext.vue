@@ -3,7 +3,7 @@
 <template>
     <div class="dt-global">
         <div class="dt-item" v-for="(item, index) in jsonData" :key="index">
-                <img class="dt-item-plate" :src="imgUrls[index]" />
+            <img v-if="item.toleft" class="dt-item-plate" :src="imgUrls[index]" />
             <div class="dt-item-w">
                 <div class="dt-item-title">
                     <div>{{ item.title }}</div>
@@ -21,6 +21,7 @@
                     </a>
                 </div>
             </div>
+            <img v-if="!item.toleft" class="dt-item-plate" :src="imgUrls[index]" />
         </div>
     </div>
 </template>

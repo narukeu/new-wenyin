@@ -1,5 +1,6 @@
 [
   {
+    "toleft": true,
     "title": "开源操作系统",
     "subtitle": "Open source OS based on GNU/Linux",
     "content1": "简约不失优美，实用美学主义，让桌面操控成为一种享受，为桌面用户提供商业操作系统之外的选择。",
@@ -9,6 +10,7 @@
     "img": "/images/pic1.png"
   },
   {
+    "toleft": false,
     "title": "开源项目本地化",
     "subtitle": "Translate technical documents from abroad",
     "content1": "软件本地化，与开源方案提供的各种优势相结合，改善了用户体验，并最终导致相关方案的推广普及。",
@@ -18,6 +20,8 @@
     "img": "/images/pic2.png"
   },
   {
+    "toleft": true,
+    "position": "left",
     "title": "软件和知识库",
     "subtitle": "Make our modest for open source software",
     "content1": "开源项目不仅仅是单个个体的贡献，更是一个团队共同发展的过程。 在开源项目中，可以和其他开发者合作，共同开发和推广项目，从而提高整个开源社区的水平和影响力。",
