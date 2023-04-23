@@ -1,57 +1,60 @@
+// 为了保证移动版视图下图片和文字的整齐，所以宽高设置一致。
+
+
+
 .dt-global {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 
     .dt-item {
-        justify-content: center;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
+        margin: 10px 10px;
+
+        //以图片宽度为基准设置图片的高和文字的宽
+        $base-num: 380px;
 
         &-plate {
-            height: 260px;
-            width: 300px;
-            display: flex;
+            margin: 10px 30px;
+            max-width: $base-num;
+            max-height: ($base-num*0.8)
         }
 
         &-w {
             display: flex;
-            margin: 20px;
+            margin: 0 40px;
             flex-direction: column;
             justify-content: center;
-            width: 310px;
+            max-width: ($base-num*1.5);
         }
 
         &-title {
             div:nth-child(1) {
-                font-size: 30px;
+                font-size: 35px;
                 font-weight: bolder;
             }
 
             div:nth-child(2) {
-                font-size: 16px;
+                font-size: 20px;
             }
         }
 
         &-cont {
-            font-size: 15px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-top: 20px;
         }
 
         &-footer {
             display: flex;
-            flex-wrap: nowrap;
             align-items: center;
-            height: 20px;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            margin-top: 20px;
 
             >a>div {
-                display: flex;
-                flex-wrap: nowrap;
                 justify-content: center;
                 align-items: center;
                 color: #337ecc;
